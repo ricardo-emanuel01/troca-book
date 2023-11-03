@@ -1,8 +1,9 @@
+require('dotenv').config();
 module.exports = {
   "development": {
     "host": process.env.DBHOST,
     "port": process.env.DBPORT,
-    "user": process.env.DBUSER,
+    "username": process.env.DBUSER,
     "password": process.env.DBPASS,
     "database": process.env.DATABASE,
     "dialect": "postgres"
