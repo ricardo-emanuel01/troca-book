@@ -1,5 +1,5 @@
 'use strict';
-const Book = require('./book');
+
 const {
   Model
 } = require('sequelize');
