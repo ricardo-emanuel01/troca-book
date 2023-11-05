@@ -6,7 +6,14 @@ module.exports = {
     "username": process.env.DBUSER,
     "password": process.env.DBPASS,
     "database": process.env.DATABASE,
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "ssl":true,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false, 
+      },
+    },
   },
   "test": {
     "username": "root",
